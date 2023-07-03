@@ -1,0 +1,26 @@
+body{
+    background-color: #151719;
+    color: white;
+    
+}
+#custom-nav{
+    padding: 1rem 6rem 1rem 6rem;
+    margin: 0;
+    color: rgb(255, 255, 255); 
+}
+#logo{
+    width: 4rem;
+}
+section{
+    padding-top: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+p{
+    font-size: large;
+}
+#blog-title{
+    color: 
+    #e4f701;
+    text-shadow: 0 0 5px #e4f701;
+}
