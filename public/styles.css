@@ -1,42 +1,223 @@
-body{
-    background-color: #151719;
-    color: white;
-    
+body {
+  background-color: #00152b;
+  
+  color: white;
+  
 }
-#custom-nav{
-    padding: 1rem 6rem 1rem 6rem;
-    margin: 0;
-    color: rgb(255, 255, 255); 
+*{
+  font-family: 'Asap Condensed', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 }
-#logo{
-    width: 4rem;
-}
-section{
-    padding-top: 1.5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-}
-p{
-    font-size: large;
-}
-#blog-title{
-    color: 
-    #e4f701;
-    text-shadow: 0 0 5px #e4f701;
+#custom-nav {
+  padding: 1rem 6rem 1rem 6rem;
+  margin: 0;
+  color: rgb(255, 255, 255);
 }
 
-#footer{
-    position: absolute;
-    /* bottom: 2.5rem; */
-    width: 100%;
-    height: 5rem;
-    text-align: center;
-    background-color: green;
-    margin-bottom: 0;
+#logo {
+  width: 4rem;
+}
+
+section {
+  padding-top: 1.5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  
+}
+
+p {
+  font-size: large;
+}
+
+#blog-title {
+  color:
+    #e4f701;
+  text-shadow: 0 0 5px #e4f701;
+}
+
+#footer {
+  position: absolute;
+
+  /* bottom: 2.5rem; */
+  /* width: 100%; */
+  height: 5rem;
+  text-align: center;
+  background-color: green;
+  margin-bottom: 0;
 
 }
 
 .page-container {
-    min-height: 100vh;
-    position: relative;
+  min-height: 100vh;
+  position: relative;
+}
+
+#one {
+  color: blue;
+  text-shadow: 10px blue;
+}
+
+#two {
+  color: yellow;
+  text-shadow: 10px yellow;
+}
+
+#three {
+  color: red;
+  text-shadow: 10px red;
+}
+
+h1 {
+  font-size: 3rem;
+
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+
+
+
+/* CSS for HOME section  */
+
+#home{
+  text-align: center;
+}
+
+/* CSS for EVENTS section  */
+#events{
+  text-align: center;
+}
+.event-item{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* justify-content: center; */
+}
+.event-detail{
+  /* display: flex;
+  flex-direction: column; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 1rem;
+  text-align: start;
+}
+.event-content{
+  padding-top:2rem ;
+  padding-bottom: 2rem ;
+  text-align: end;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  align-items: center;
+  /* display: block; */
+}
+
+/* CSS for TEAM section  */
+
+
+.row1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+}
+
+#item-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#item-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#item-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  place-items: center;
+}
+
+#item-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#item-5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.card {
+  /* Adding shadows to create the "card" effect */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(86, 101, 1, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  /* 5px rounded corners */
+  background-color: #091f32;
+  color: white;
+  width: 20rem;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 #FFD717;
+  /* box-shadow: 8px 8px 8px 8px #FFD717; */
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 16px;
+}
+
+#team img {
+
+  border-radius: 5px 5px 0 0;
+}
+
+
+/* CSS for Contributors Section  */
+#contributors{
+  display: flex;
+  justify-content: center;
+  margin: 0  1.5rem 0 1.5rem;
+  
+}
+.card-contributor {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #07210b;
+  color: white;
+  padding: 1rem 0 1rem 0;
+}
+.card-contributor img{
+  border-radius: 50%;
+}
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+.card-contributor a {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 72, 22, 0.2);
+}
+.card-contributor:hover{
+  box-shadow: 0 8px 16px 0 #02383C;
+  /* box-shadow: 10px 10px #002d06; */
 }
