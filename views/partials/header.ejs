@@ -13,39 +13,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Ubuntu&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="custom-nav">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" id="logo" alt="VoltLogo"> Electronics Club</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item px-5">
-            <a class="nav-link active" aria-current="page" href="#home">
-              <h5>About</h5>
-            </a>
-          </li>
-          <li class="nav-item px-5">
-            <a class="nav-link" href="#events">
-              <h5>Events</h5>
-            </a>
-          </li>
-          <li class="nav-item px-5">
-            <a class="nav-link" href="#team">
-              <h5>Team</h5>
-            </a>
-          </li>
-          <li class="nav-item px-5">
-            <a class="nav-link" href="/blog">
-              <h5>Blog</h5>
-            </a>
-          </li>
-        </ul>
-      </div>
+  <nav >
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logo">
+      <a href="/">Electronics Club</a>
+    </div>
+    <div class="menu">
+      <input type="checkbox" id="nav-check">
+      <label for="nav-check" class="nav-check-label"><i class="fas fa-bars fa-lg"></i></label>
+    </div>
+    <div class="list-items">
+      <ul>
+        <li class="close-btn">
+          <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Events</a>
+        </li>
+        <li>
+          <a href="">Teams</a>
+        </li>
+        <li>
+          <a href="">Blogs</a>
+        </li>
+      </ul>
     </div>
   </nav>
 </head>
-
 <body>
