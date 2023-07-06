@@ -155,6 +155,18 @@ p {
   position: relative;
 }
 
+
+
+
+
+/* CSS for HOME section  */
+
+#home{
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+}
 #one {
   color: blue;
   text-shadow: 10px blue;
@@ -169,23 +181,8 @@ p {
   color: red;
   text-shadow: 10px red;
 }
-
-h1 {
-  font-size: 3rem;
-
-}
-
 p {
   font-size: 1.5rem;
-}
-
-
-
-
-/* CSS for HOME section  */
-
-#home{
-  text-align: center;
 }
 
 /* CSS for EVENTS section  */
@@ -318,9 +315,75 @@ p {
   text-decoration: none;
   font-size: 22px;
   color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 72, 22, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(8, 41, 18, 0.2);
 }
 .card-contributor:hover{
-  box-shadow: 0 8px 16px 0 #02383C;
+  box-shadow: 0 8px 16px 0 #007a0a;
   /* box-shadow: 10px 10px #002d06; */
+}
+
+
+
+@media only screen and (max-width:800px) {
+
+  section{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem ;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  
+  /* EVENTS CSS  */
+  #events{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .event-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .event-detail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .event-content{
+    text-align: center;
+  }
+  /* TEAM CSS  */
+  #team{
+    display: flex;
+    flex-direction: column;
+  }
+  .row1{
+    display: flex;
+    flex-direction: column;
+  }
+  .row2{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: 15rem;
+  }
+
+  /* CONTRIBUTORS CSS  */
+  #contributors{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-contributor{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 15rem;
+    
+  }
+  .card-contributor p{
+    font-size: 1rem;
+  }
 }
