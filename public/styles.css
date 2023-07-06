@@ -123,19 +123,13 @@ nav ul li a:hover{
 
 section {
   padding-top: 1.5rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   
 }
 
 p {
   font-size: large;
-}
-
-#blog-title {
-  color:
-    #e4f701;
-  text-shadow: 0 0 5px #e4f701;
 }
 
 #footer {
@@ -213,53 +207,19 @@ p {
 }
 
 /* CSS for TEAM section  */
-
-
-.row1 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  place-items: center;
+#team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-#item-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-#item-2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-#item-3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-
-.row2 {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  place-items: center;
-}
-
-#item-4 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-#item-5 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-
 .card {
-  /* Adding shadows to create the "card" effect */
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 8px 0 rgba(86, 101, 1, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-  /* 5px rounded corners */
   background-color: #091f32;
   color: white;
   width: 20rem;
@@ -279,7 +239,6 @@ p {
 }
 
 #team img {
-
   border-radius: 5px 5px 0 0;
 }
 
@@ -289,10 +248,8 @@ p {
   display: flex;
   justify-content: center;
   margin: 0  1.5rem 0 1.5rem;
-  
 }
 .card-contributor {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
   text-align: center;
@@ -300,6 +257,7 @@ p {
   background-color: #07210b;
   color: white;
   padding: 1rem 0 1rem 0;
+  /* box-shadow: 0 8px 16px 0 #00b40f; */
 }
 .card-contributor img{
   border-radius: 50%;
@@ -308,23 +266,28 @@ p {
   color: white;
   font-size: 18px;
 }
-
 .card-contributor a {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   text-decoration: none;
   font-size: 22px;
   color: white;
-  box-shadow: 0 4px 8px 0 rgba(8, 41, 18, 0.2);
 }
-.card-contributor:hover{
-  box-shadow: 0 8px 16px 0 #007a0a;
-  /* box-shadow: 10px 10px #002d06; */
+.card-contributor p{
+  font-size: medium;
 }
+.card-contributor a i:hover {
+  transition: 0.25s ease-in-out ;
+  transform: scale(1.2);
+  }
+/* .card-contributor:hover{
+  box-shadow: 0 8px 16px 0 #00b40f;
+ 
+} */
 
 
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:600px) {
 
   section{
     padding-left: 0.5rem;
@@ -355,35 +318,76 @@ p {
   .event-content{
     text-align: center;
   }
+
   /* TEAM CSS  */
-  #team{
-    display: flex;
-    flex-direction: column;
-  }
-  .row1{
-    display: flex;
-    flex-direction: column;
-  }
-  .row2{
-    display: flex;
-    flex-direction: column;
-  }
+  
   .card{
     width: 15rem;
+    box-shadow: 0 8px 16px 0 #FFD717;
   }
 
   /* CONTRIBUTORS CSS  */
   #contributors{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .card-contributor{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     width: 15rem;
+    background-color: #00152b;
+    /* box-shadow: 0 8px 16px 0 #00b40f; */
     
+  }
+  .card-contributor img{
+    box-shadow: 0 8px 16px 0 #00b40f;
   }
   .card-contributor p{
     font-size: 1rem;
   }
 }
+
+@media only screen and (min-width: 768px){
+  section{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  .event-detail{
+    text-align: end;
+  }
+  .event-content{
+    text-align: start;
+  }
+  #team{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #contributors{
+    
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .card-contributor{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 12rem;
+    background-color: #00152b;
+
+  }
+  .card-contributor img{
+    box-shadow: 0 8px 16px 0 #00b40f;
+  } 
+    
+  
+}
+
