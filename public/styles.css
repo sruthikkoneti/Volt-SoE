@@ -1,26 +1,28 @@
 body {
   background-color: #00152b;
-  
+
   color: white;
-  
+
 }
-*{
-    font-family: 'Asap Condensed', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+
+* {
+  font-family: 'Asap Condensed', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
-h1{
+
+h1 {
   text-align: center;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo img{
-    margin-right: 10px;
-    width: 4rem;
+.logo img {
+  margin-right: 10px;
+  width: 4rem;
 }
 
 nav {
@@ -33,94 +35,94 @@ nav {
   /* border: yellow 2px solid; */
 }
 
-nav ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
 }
 
-a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: 600;  
-    font-size: 1.3rem;
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
-nav ul li a{
-    display: block;
-    padding: 8px 16px;
-    transition: 0.2s;
-    border-radius: 30px;
+nav ul li a {
+  display: block;
+  padding: 8px 16px;
+  transition: 0.2s;
+  border-radius: 30px;
 }
 
-nav ul li a:hover{
-    background-color: #e4f701;
+nav ul li a:hover {
+  background-color: #e4f701;
 }
 
 .nav-check-label {
-    display: none;
-    height: fit-content;
-    cursor: pointer;
-    padding: 3px 8px;
-    border-radius: 5px;
-    transition: 0.2s;
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
-#nav-check{
-    display: none;
+#nav-check {
+  display: none;
 }
 
-.nav-check-label:hover{
-    background-color: yellow;
+.nav-check-label:hover {
+  background-color: yellow;
 }
 
-.close-btn{
-    display: none;
+.close-btn {
+  display: none;
 }
 
 @media only screen and (max-width:800px) {
-    nav{
-        width: 90%;
-    }
+  nav {
+    width: 90%;
+  }
 
-    .nav-check-label{
-        display: initial;
-    }
+  .nav-check-label {
+    display: initial;
+  }
 
-    .close-btn{
-        display: initial;
-    }
+  .close-btn {
+    display: initial;
+  }
 
-    .list-items{
-        position: fixed;
-        right: -200px;
-        top: 0;
-        z-index: 999;
-        width: 200px;
-        height: 100vh;
-        background-color: aliceblue;
-        transition: 0.2s;
-    }
+  .list-items {
+    position: fixed;
+    right: -200px;
+    top: 0;
+    z-index: 999;
+    width: 200px;
+    height: 100vh;
+    background-color: aliceblue;
+    transition: 0.2s;
+  }
 
-    nav ul {
-        display: block;
-        padding: 0 20px;
-        margin-top: 30px;
-    }
+  nav ul {
+    display: block;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
 
-    nav ul li a {
-        color: #00152b;
-    }
+  nav ul li a {
+    color: #00152b;
+  }
 
-    #nav-check:checked ~ .list-items{
-        left: 0;
-    }
+  #nav-check:checked~.list-items {
+    left: 0;
+  }
 
-    body:has(#nav-check:checked) .list-items {
-        right: 0px;
-    }
+  body:has(#nav-check:checked) .list-items {
+    right: 0px;
+  }
 
 }
 
@@ -128,7 +130,7 @@ section {
   padding-top: 1.5rem;
   padding-left: 15rem;
   padding-right: 15rem;
-  
+
 }
 
 p {
@@ -158,12 +160,14 @@ p {
 
 /* CSS for HOME section  */
 
-#home{
+#home {
   text-align: center;
 }
+
 h1 {
   font-size: 3rem;
 }
+
 #one {
   color: blue;
   text-shadow: 10px blue;
@@ -178,20 +182,23 @@ h1 {
   color: red;
   text-shadow: 10px red;
 }
+
 p {
   font-size: 1.5rem;
 }
 
 /* CSS for EVENTS section  */
-#events{
+#events {
   text-align: center;
 }
-.event-item{
+
+.event-item {
   display: grid;
   grid-template-columns: auto auto auto;
   /* justify-content: center; */
 }
-.event-detail{
+
+.event-detail {
   /* display: flex;
   flex-direction: column; */
   grid-column-start: 1;
@@ -199,9 +206,10 @@ p {
   padding: 1rem;
   text-align: start;
 }
-.event-content{
-  padding-top:2rem ;
-  padding-bottom: 2rem ;
+
+.event-content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: end;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -210,11 +218,12 @@ p {
 }
 
 /* CSS for TEAM section  */
-#team{
+#team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .card {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -247,11 +256,12 @@ p {
 
 
 /* CSS for Contributors Section  */
-#contributors{
+#contributors {
   display: flex;
   justify-content: center;
-  margin: 0  1.5rem 0 1.5rem;
+  margin: 0 1.5rem 0 1.5rem;
 }
+
 .card-contributor {
   max-width: 300px;
   margin: auto;
@@ -262,13 +272,16 @@ p {
   padding: 1rem 0 1rem 0;
   /* box-shadow: 0 8px 16px 0 #00b40f; */
 }
-.card-contributor img{
+
+.card-contributor img {
   border-radius: 50%;
 }
+
 .title {
   color: white;
   font-size: 18px;
 }
+
 .card-contributor a {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -276,13 +289,16 @@ p {
   font-size: 22px;
   color: white;
 }
-.card-contributor p{
+
+.card-contributor p {
   font-size: medium;
 }
+
 .card-contributor a i:hover {
-  transition: 0.25s ease-in-out ;
+  transition: 0.25s ease-in-out;
   transform: scale(1.2);
-  }
+}
+
 /* .card-contributor:hover{
   box-shadow: 0 8px 16px 0 #00b40f;
  
@@ -292,93 +308,108 @@ p {
 
 @media only screen and (max-width:600px) {
 
-  section{
+  section {
     padding-left: 0.5rem;
-    padding-right: 0.5rem ;
+    padding-right: 0.5rem;
   }
-  h1{
+
+  h1 {
     font-size: 2rem;
   }
-  p{
+
+  p {
     font-size: 1rem;
   }
-  
+
   /* EVENTS CSS  */
-  #events{
+  #events {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .event-item{
+
+  .event-item {
     display: flex;
     flex-direction: column;
   }
-  .event-detail{
+
+  .event-detail {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .event-content{
+
+  .event-content {
     text-align: center;
   }
 
   /* TEAM CSS  */
-  
-  .card{
+
+  .card {
     width: 15rem;
     box-shadow: 0 8px 16px 0 #FFD717;
   }
 
   /* CONTRIBUTORS CSS  */
-  #contributors{
+  #contributors {
     display: flex;
     flex-wrap: wrap;
   }
-  .card-contributor{
+
+  .card-contributor {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     width: 15rem;
     background-color: #00152b;
     /* box-shadow: 0 8px 16px 0 #00b40f; */
-    
+
   }
-  .card-contributor img{
+
+  .card-contributor img {
     box-shadow: 0 8px 16px 0 #00b40f;
   }
-  .card-contributor p{
+
+  .card-contributor p {
     font-size: 1rem;
   }
 }
 
-@media only screen and (min-width: 768px){
-  section{
+@media only screen and (min-width: 768px) {
+  section {
     padding-left: 8rem;
     padding-right: 8rem;
   }
-  h1{
+
+  h1 {
     font-size: 2.5rem;
   }
-  p{
+
+  p {
     font-size: 1.5rem;
   }
-  .event-detail{
+
+  .event-detail {
     text-align: end;
   }
-  .event-content{
+
+  .event-content {
     text-align: start;
   }
-  #team{
+
+  #team {
     display: flex;
     flex-wrap: wrap;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  #contributors{
-    
-    display:flex;
+
+  #contributors {
+
+    display: flex;
     flex-wrap: wrap;
   }
-  .card-contributor{
+
+  .card-contributor {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 3rem;
@@ -387,10 +418,26 @@ p {
     background-color: #00152b;
 
   }
-  .card-contributor img{
+
+  .card-contributor img {
     box-shadow: 0 8px 16px 0 #00b40f;
-  } 
-    
-  
+  }
+
 }
 
+.blog-container {
+  text-align: center;
+}
+
+.blog-container button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e4f701;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+
+}
