@@ -12,7 +12,9 @@ body {
 h1 {
   text-align: center;
 }
-
+.title{
+  color: #e4f701;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -303,14 +305,14 @@ p {
   background-color: #07210b;
   color: white;
   padding: 1rem 0 1rem 0;
-  /* box-shadow: 0 8px 16px 0 #00b40f; */
+
 }
 
 .card-contributor img {
   border-radius: 50%;
 }
 
-.title {
+.role {
   color: white;
   font-size: 18px;
 }
@@ -332,10 +334,6 @@ p {
   transform: scale(1.2);
 }
 
-/* .card-contributor:hover{
-  box-shadow: 0 8px 16px 0 #00b40f;
- 
-} */
 
 
 
@@ -394,8 +392,6 @@ p {
     margin-bottom: 0.5rem;
     width: 15rem;
     background-color: #00152b;
-    /* box-shadow: 0 8px 16px 0 #00b40f; */
-
   }
 
   .card-contributor img {
@@ -422,11 +418,11 @@ p {
   }
 
   .event-detail {
-    text-align: end;
+    text-align: start;
   }
 
   .event-content {
-    text-align: start;
+    text-align: end;
   }
 
   #team {
@@ -449,6 +445,7 @@ p {
     margin-right: 3rem;
     width: 12rem;
     background-color: #00152b;
+
 
   }
 
