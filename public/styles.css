@@ -4,8 +4,10 @@ body {
 
 }
 *{
+    /* font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
     font-family: 'Asap Condensed', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+font-family: 'Ubuntu', sans-serif;
     margin: 0;
 }
 
@@ -238,7 +240,7 @@ p {
   }
 }
 
-nav,.logo,h1 {
+h1 {
   animation: fade-in 2s ease-in;
 }
 
@@ -509,4 +511,13 @@ nav,.logo,h1 {
   display: inline-block;
   border-radius: 5px;
 
+}
+
+
+/* Padding for Sections */
+@media only screen and (min-width:768px) {
+  #home{
+    padding-top: 1rem ;
+    padding-bottom: 8rem;
+  }
 }
