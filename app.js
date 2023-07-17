@@ -13,7 +13,7 @@ app.use(express.static("public"))
 
 app.get("/",function(req,res){
 
-    res.render("home")
+    res.render("home.ejs")
 })
 const blogItems=[]
 app.get("/blog",function(req,res){
